@@ -49,6 +49,17 @@ mixin _$Counter on _Counter, Store {
   }
 
   @override
+  void multiplyBy2() {
+    final _$actionInfo =
+        _$_CounterActionController.startAction(name: '_Counter.multiplyBy2');
+    try {
+      return super.multiplyBy2();
+    } finally {
+      _$_CounterActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 count: ${count}

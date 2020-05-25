@@ -1,0 +1,9 @@
+name: mobx_simple
+description: Demo simple Mobx
+
+dependencies:
+  mobx:
+
+dev_dependencies:
+  build_runner:
+  mobx_codegen:

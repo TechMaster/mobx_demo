@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        appBar: PreferredSize( //Phải cho Observer vào trong PreferredSize vì appBar cần kiểu PreferredSizeWidget
+        appBar: PreferredSize(
+          //Phải cho Observer vào trong PreferredSize vì appBar cần kiểu PreferredSizeWidget
           preferredSize: const Size.fromHeight(60),
           child: Observer(
-            builder: (_) => AppBar(  //Đổi màu nền AppBar theo trạng thái của 3 slider Red, Green, Blue
+            builder: (_) => AppBar(
+              //Đổi màu nền AppBar theo trạng thái của 3 slider Red, Green, Blue
               backgroundColor: Color.fromARGB(
                 255,
                 event.red.floor(),

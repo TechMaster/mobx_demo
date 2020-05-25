@@ -5,7 +5,7 @@ import 'events/event.dart';
 
 class MobXMixer extends StatelessWidget {
   final Event event;
-  MobXMixer(this.event);  //Truyền đối tượng quản lý trạng thái MobX vào đây
+  MobXMixer(this.event); //Truyền đối tượng quản lý trạng thái MobX vào đây
   @override
   Widget build(BuildContext context) {
     return Observer(

@@ -27,4 +27,9 @@ abstract class _Counter with Store {
   void decrement() {
     count--;
   }
+
+  @action
+  void multiplyBy2() {
+    count *= 2;
+  }
 }
