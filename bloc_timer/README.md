@@ -5,3 +5,5 @@
 [Hướng dẫn chi tiết ở đây](https://bloclibrary.dev/#/fluttertimertutorial?id=setup)
 
 Bài tập cho các bạn lớp Flutter Techmaster, hãy convert ứng dụng này sử dụng MobX
+
+![](../images/timer.gif)
