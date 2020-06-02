@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'count_down_slider.dart';
+import 'circular_slider.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Count Down Timer Demo',
-      home: Scaffold(body: DemoCountDown()),
+      home: Scaffold(body: CountDownSlider()),
     );
   }
 }
