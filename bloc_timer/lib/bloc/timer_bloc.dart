@@ -6,7 +6,8 @@ import '../ticker.dart';
 
 part 'timer_event.dart';
 part 'timer_state.dart';
-
+//Bloc<CounterEvent, int)
+//Bloc<AccountEvent, AccountState>,
 class TimerBloc extends Bloc<TimerEvent, TimerState> {
   final Ticker _ticker;
   final int _duration = 60;
@@ -31,8 +32,10 @@ class TimerBloc extends Bloc<TimerEvent, TimerState> {
     TimerEvent event,
   ) async* {
     if (event is TimerStarted) {
+      ///
       yield* _mapTimerStartedToState(event);
     } else if (event is TimerPaused) {
+      ////
       yield* _mapTimerPausedToState(event);
     } else if (event is TimerResumed) {
       yield* _mapTimerResumedToState(event);
